@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('recipe_authors', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('photo');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
