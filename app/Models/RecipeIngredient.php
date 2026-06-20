@@ -12,7 +12,7 @@ class RecipeIngredient extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'ingridient_id',
+        'ingredient_id',
         'recipe_id',
     ];
 

@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('thumbnail');
-            $table->string('url_file');
-            $table->string('url_video');
+            $table->string('url_file')->nullable();
+            $table->string('url_video')->nullable();
             $table->text('about');
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->foreignId('recipe_author_id')->constrained()->cascadeOnDelete();
