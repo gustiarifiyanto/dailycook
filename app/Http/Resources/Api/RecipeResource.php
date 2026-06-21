@@ -4,7 +4,7 @@ namespace App\Http\Resources\Api;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use app\Http\Resources\Api\RecipeIngredientResource;
+use App\Http\Resources\Api\RecipeIngredientResource;
 
 
 
