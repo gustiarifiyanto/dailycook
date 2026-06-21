@@ -10,7 +10,8 @@ use App\Models\Recipe;
 class SearchController extends Controller
 {
     //
-    public function index(Request $request) {
+    public function index(Request $request)
+    {
         $query = $request->input('query');
         $recipes = Recipe::where('name', 'LIKE', "%{$query}%")->get();
         return RecipeResource::collection($recipes);
