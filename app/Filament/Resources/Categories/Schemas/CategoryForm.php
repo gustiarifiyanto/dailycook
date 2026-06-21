@@ -18,13 +18,11 @@ class CategoryForm
                     ->maxLength(255),
 
                 FileUpload::make('icon')
+                    ->image()
                     ->label('Ikon Kategori')
                     ->required()
                     ->helperText('Unggah ikon yang mewakili kategori ini. Pastikan ikon tersebut jelas dan mudah dikenali.')
-                    ->image()
                     ->maxSize(2048) // Maksimal ukuran file dalam KB
-                    ->directory('category-icons') // Direktori penyimpanan file
-                    ->visibility('public'), // Atur visibilitas file
             ]);
     }
 }
